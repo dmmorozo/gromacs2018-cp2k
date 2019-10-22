@@ -21,4 +21,5 @@ You could run it with something like:
 
 gmx mdrun -nt 1 -ntomp 1 -v -s topol.tpr
 
-
+4) All interface routines are located on the place of Gaussian one in the qm-gaussian.cpp
+There are also modifications to qmmm.cpp has been done to ensure that the whole mdatoms (which are not QM) are in the MMatoms record.
